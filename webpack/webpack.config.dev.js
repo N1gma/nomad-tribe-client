@@ -9,7 +9,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
  */
 const CURRENT_WORKING_DIR = process.cwd();
 
-const config = {
+module.exports = {
   entry: {
     app: [
       'webpack-hot-middleware/client', // bundle the client for hot reloading
@@ -69,5 +69,3 @@ const config = {
   },
   devtool: 'inline-source-map',
 };
-
-module.exports = config;

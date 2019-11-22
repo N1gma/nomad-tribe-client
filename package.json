@@ -3,15 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "start": "webpack-dev-server",
+    "start": "npm run dev",
     "clean": "rimraf node_modules && rimraf dist && npm install",
     "webpack:dev": "cross-env NODE_ENV=development webpack --config ./webpack/webpack.config.dev.js",
     "webpack:prod": "cross-env NODE_ENV=production webpack --config ./webpack/webpack.config.prod.js",
     "build": "rimraf dist && npm run webpack:dev && npm run start",
     "build:prod": "rimraf dist && npm run webpack:prod && npm run start",
-    "webpack-dev-server": "webpack-dev-server",
-    "dev": "webpack-dev-server --config ./webpack/webpack.config.dev.js",
-    "prod": "webpack --mode=production"
+    "dev": "webpack-dev-server --config ./webpack/webpack.config.dev.js"
   },
   "dependencies": {
     "axios": "^0.18.0",
