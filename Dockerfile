@@ -21,6 +21,5 @@ COPY nginx.conf /etc/nginx/conf.d/default.conf
 RUN rm -rf /usr/share/nginx/html/*
 
 ## From 'builder' stage copy over the artifacts in dist folder to default nginx public folder
-COPY --from=builder /client/public /usr/share/nginx/html
-COPY --from=builder /client/dist /usr/share/nginx/html/dist
+COPY --from=builder /dist /usr/share/nginx/html/dist
 CMD ["nginx", "-g", "daemon off;"]
