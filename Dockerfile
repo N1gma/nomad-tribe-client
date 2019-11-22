@@ -7,6 +7,7 @@ RUN npm set progress=false && npm config set depth 0 && npm cache clean --force 
 
 COPY ./public ./public
 COPY ./webpack ./webpack
+COPY ./src ./src
 
 RUN npm run webpack:prod
 
