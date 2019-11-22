@@ -12,6 +12,7 @@
     "dev": "webpack-dev-server --config ./webpack/webpack.config.dev.js"
   },
   "dependencies": {
+    "axios": "^0.19.0",
     "classnames": "^2.2.6",
     "connected-react-router": "^6.4.0",
     "dotenv": "^8.0.0",
