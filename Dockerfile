@@ -5,7 +5,6 @@ COPY package.json package-lock.json .babelrc ./
 
 RUN npm set progress=false && npm config set depth 0 && npm cache clean --force && npm install
 
-COPY ./public ./public
 COPY ./webpack ./webpack
 COPY ./src ./src
 
@@ -21,5 +20,5 @@ COPY nginx.conf /etc/nginx/conf.d/default.conf
 RUN rm -rf /usr/share/nginx/html/*
 
 ## From 'builder' stage copy over the artifacts in dist folder to default nginx public folder
-COPY --from=builder /dist /usr/share/nginx/html/dist
+COPY --from=builder /dist /usr/share/nginx/html
 CMD ["nginx", "-g", "daemon off;"]
