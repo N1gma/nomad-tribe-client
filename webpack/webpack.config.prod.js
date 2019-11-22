@@ -22,7 +22,7 @@ module.exports = {
     output: {
         path: path.resolve(CURRENT_WORKING_DIR, 'dist'), //  destination
         filename: 'bundle.js',
-        publicPath: '/',
+        publicPath: './dist/',
     },
     plugins: [
         new HtmlWebpackPlugin({
