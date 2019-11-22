@@ -1,0 +1,81 @@
+.subscribe-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3%;
+    position: relative;
+}
+
+.subscr-img {
+    width: 31vw;
+}
+
+
+.subscr-modal {
+    padding: 0px; 
+    z-index: 1000;
+    position: fixed;
+    text-align: center;
+    bottom: 5%;
+    left: 35%;
+}
+
+.subscr-modal .btn-agree {
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #0452fad3;
+    color: white;
+    font-size: 1.7vw;
+    padding: 0.8vw 1.8vw;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .subscr-modal .btn-agree:hover {
+    background-color: #0452fa;
+  }
+  
+  @media screen and (max-width: 480px) {
+    .subscr-img {
+        width: 80vw;
+    }
+    .subscr-modal {
+        bottom: 25%;
+        left: 12%;
+    }
+
+    .subscr-modal .btn-agree {
+        font-size: 3vw;
+        padding: 2.2vw 3vw;
+      }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    .subscr-img {
+        width: 60vw;
+    }
+    .subscr-modal {
+        bottom: 20%;
+        left: 20%;
+    }
+
+    .subscr-modal .btn-agree {
+        font-size: 2.5vw;
+        padding: 1.5vw 2.5vw;
+      }
+  }
+
+
+#overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 998;
+    background: rgba(0, 0, 0, 0.6);
+  }

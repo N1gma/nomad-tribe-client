@@ -1,0 +1,38 @@
+
+.email-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    padding: 4vh 0;
+   
+}
+
+.input {
+    background: linear-gradient(to right, #161a23, #161a23) 5px calc(100% - 5px)/calc(100% - 10px) 0.1vw no-repeat;
+    padding: 3.2%;
+    border: none;
+    outline: none;
+    width: 28vw;
+    display: inline-block;
+    font-size: 1.8vw;
+}
+
+/* 
+.underline {
+    background-color: #0452fa;
+    display: block;
+    font-size: 0;
+    margin-top: 3vh;
+    height: 2px;
+    -webkit-transform: scale(0, 1);
+    transform: scale(0, 1);
+    -webkit-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+    width: 25vw;
+} */
+
+
+.input:focus+.underline {
+    transform: scale(1);
+}

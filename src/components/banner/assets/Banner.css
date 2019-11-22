@@ -1,0 +1,16 @@
+  .banner-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4vw;
+    text-align: left;
+    max-width: 85%;
+    font-size: 3vw;
+    line-height: 1.38;
+    letter-spacing: normal;
+    color: #161a23;
+  }
+
+  span.color-highlight {
+    color: #0452fa;
+  }

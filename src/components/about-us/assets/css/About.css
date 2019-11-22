@@ -1,0 +1,51 @@
+.about-us-cont {
+  border-radius: 15px;
+  line-height: 2.2vw;
+  /* font-weight: 500; */
+  font-size: 1.5vw;
+  padding-top: 10%;
+  
+}
+
+span.color-highlight {
+  color: #0452fa;
+}
+
+.back-nav-button {
+  color: #63666c;
+  font-size: 1.3vw;
+  float: right;
+  margin-top: 5%;
+  border: none;
+}
+
+.back-nav-button:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  
+}
+/* 
+.insta-container div{
+  width: 50%;
+  height: 50%;
+  border: solid 1px #bdbaba;
+} */
+
+.insta-container {
+  padding: 3%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.about-us {
+padding-left: 2.7vw;
+padding-right: 2.7vw;
+} 
+
+@media screen and (max-width: 1020px) {
+  .insta-container  {
+    flex-direction: column;
+  }
+}

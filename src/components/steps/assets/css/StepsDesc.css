@@ -1,0 +1,49 @@
+.step-block>div {
+    padding: 0 6vw;
+    width: 50%;
+}
+
+
+.step-block {
+    display: flex;
+    flex-direction: row;
+    padding: 2vw;
+    flex-grow: 1;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.step-desc-bullet {
+    max-width: 6.5%;
+    max-height: 6.5%;
+    padding: 1vw 0;
+}
+
+
+.step-images-container img {
+    max-width: 100%;
+}
+
+
+.step-content {
+    line-height: 1.6;
+    font-size: 1.6vw;
+}
+
+@media screen and (max-width: 480px) {
+    .step-block  {
+        flex-direction: column;
+    }
+    .step-content {
+        margin-top: 3%;
+        margin-bottom: 5%;
+
+    }
+
+    .step-block>div {
+        width: 80%;
+    }
+    .odd {
+        flex-direction: column-reverse;
+    }
+  }

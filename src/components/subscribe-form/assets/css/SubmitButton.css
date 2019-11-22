@@ -1,0 +1,23 @@
+
+[type="button"] {
+    display: inline-block;
+    margin-left: -3.4vw;
+    border: none;
+    width: 4vw;
+    height: 6.5vh;
+    font-size: 0;
+    background: transparent;
+}
+
+
+[type="button"] img {
+    display: inline-block;
+    width: 3.3vw;
+    height: 2.8vw;
+    font-size: 0;
+    
+}
+
+button:hover {
+    cursor: pointer;
+}
