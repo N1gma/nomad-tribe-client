@@ -5,6 +5,7 @@ COPY package.json package-lock.json .babelrc ./
 
 RUN npm set progress=false && npm config set depth 0 && npm cache clean --force && npm install
 
+COPY ./public ./public
 COPY ./webpack ./webpack
 COPY ./src ./src
 
